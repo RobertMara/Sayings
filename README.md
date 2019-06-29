@@ -46,13 +46,14 @@ versions too long.  I am creating this for several purposes:
  and [NVDA (NonVisual Desktop Access)](https://www.nvaccess.org/).  NVDA is free, so I am going to focus on that, 
  at least for now.
 * Test using the default Rails MiniTest.  I have only used RSpec at work, and while I think I finally have the hang
-of basic testing in RSpec, the learning curve is huge. I want to see what MiniTest can do. I won't have any mocking
-or stubbing to do, because there are no external systems to connect to.  That will be a big factor that I am ignoring
-in this comparison.  MiniTest does have a [mocking capability] (https://github.com/seattlerb/minitest/blob/master/lib/minitest/mock.rb)
-and there is the [mocha gem](https://rubygems.org/gems/mocha).
+ of basic testing in RSpec, the learning curve is huge. I want to see what MiniTest can do. I won't have any mocking
+ or stubbing to do, because there are no external systems to connect to.  That will be a big factor that I am ignoring
+ in this comparison.  MiniTest does have a [mocking capability](https://github.com/seattlerb/minitest/blob/master/lib/minitest/mock.rb)
+ and there is the [mocha gem](https://rubygems.org/gems/mocha).  I am sure there are others.  But mocking and stubbing
+ will likely be ignored for this project.
 * Similarly, I want to compare the use of Fixtures to FactoryBot factories.  I have wasted a lot of time trying
-to create complex associations using FactoryBot, which others have also reported.  I want to see if fixtures are
-any harder to maintain.  Here are a couple blog posts to consider (admittedly old).
+ to create complex associations using FactoryBot, which others have also reported.  I want to see if fixtures are
+ any harder to maintain.  Here are a couple blog posts to consider (admittedly old).
   * Aaron Patterson's 2015 blog post ["My experience with Minitest and RSpec"](https://tenderlovemaking.com/2015/01/23/my-experience-with-minitest-and-rspec.html)
   * Brandon Hilkert's 2014 blog post [7 Reasons I'm Sticking With Minitest and Fixtures in Rails](https://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
 * What is Capybara? Heard of it, never used it.
