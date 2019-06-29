@@ -55,7 +55,7 @@ versions too long.  I am creating this for several purposes:
  to create complex associations using FactoryBot, which others have also reported.  I want to see if fixtures are
  any harder to maintain.  Here are a couple blog posts to consider (admittedly old).
   * Aaron Patterson's 2015 blog post ["My experience with Minitest and RSpec"](https://tenderlovemaking.com/2015/01/23/my-experience-with-minitest-and-rspec.html)
-  * Brandon Hilkert's 2014 blog post [7 Reasons I'm Sticking With Minitest and Fixtures in Rails](https://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
+  * Brandon Hilkert's 2014 blog post ["7 Reasons I'm Sticking With Minitest and Fixtures in Rails"](https://brandonhilkert.com/blog/7-reasons-why-im-sticking-with-minitest-and-fixtures-in-rails/)
 * What is Capybara? Heard of it, never used it.
 * Pry?  Never used it.  
 
