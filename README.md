@@ -1,8 +1,26 @@
+Other pages:  [Design](DESIGN.md) | [Versions](VERSIONS.md)
+
 # Sayings
 
 "Sayings" is a simple monolithic Ruby on Rails app where you can record sayings: Bible verses, inspirational quotes, 
 something your friend said that you found funny, etc. 
 
+
+
+## Documentation
+
+A minimal bit of documentation will be done here and in a couple other markdown pages
+referenced at the top of this file.  
+
+If I find the need to do more substantial documentation, it will be added
+to the Sayings GitHub wiki page.
+
+BTW, in the real world, I would record customer-given requirements in Microsoft Excel,
+capture the architecture and design decisions in Microsoft Word and PowerPoint (to answer the "why?" questions), 
+and use an issue tracker to capture and track implementation. I would use a
+wiki linked to the source code control software (e.g., git) to capture documentation 
+pertaining to operations and maintenance (O&M),
+like how to deploy the software, troubleshooting steps, steps to fix system problems, etc.
 
 ## Technology
 * Ruby 2.5.5
@@ -15,25 +33,25 @@ I do not plan to deploy this to a server. Therefore:
 * There is no authentication or authorization, no roles or permissions.  If you can run it, you rule your own little kingdom.
 
 Later on, I may decide to make a different version using Rails API and Vue.js, just for fun
-and as a comparison.  Or maybe use GraphQL...oooh...aaaah. 
+and as a comparison.  Or maybe use GraphQL. 
 
-
-## Documentation
-
-Documentation?  We don't need no stinkin' documentation!
-
-The requirements, design, issues, etc., will be recorded in the accompanying GitHub wiki page, should I decide to write any.
-
-In the real world, I would record customer-given requirements in Microsoft Excel,
-capture the architecture and design decisions in Microsoft Word and PowerPoint (to answer the "why?" questions), 
-and use an issue tracker to capture and track implementation. I would use a
-wiki linked to the source code control software (e.g., git) to capture documentation 
-pertaining to operations and maintenance (O&M),
-like how to deploy the software, troubleshooting steps, steps to fix system problems, etc.
 
 ## Developer Setup
 
-TODO
+This assumes you have installed the software in the Technology section, above.
+
+Then install application using the standard commands:
+
+#TODO: FIX and FINISH
+```
+Sayings> bundle install --path=./.bundle
+Sayings> bundle exec rake db:create
+Sayings> bundle exec rake db:migrate
+Sayings> bundle exec rake db:seed
+Sayings> TODO: whatever command runs minitest tests
+
+```
+
 
 ## Why does this project exist?
 I am creating this to catch up in the Ruby on Rails world, primarily.  I have been stuck in old Ruby and Rails
