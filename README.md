@@ -1,4 +1,4 @@
-Other pages:  [Design](DESIGN.md) | [Versions](VERSIONS.md)
+Other pages:  [Design](DESIGN.md) | [Versions](VERSIONS.md) | [To-do list][TODO.md]
 
 # Sayings
 

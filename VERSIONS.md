@@ -1,4 +1,4 @@
-Other pages:  [README](README.md) | [Versions](VERSIONS.md)
+Other pages:  [README](README.md) | [Design](DESIGN.md) | [To-do list][TODO.md]
 
 # Versions
 
