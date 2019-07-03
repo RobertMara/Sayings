@@ -1,0 +1,80 @@
+Usage:
+  rails generate resource NAME [field[:type][:index] field[:type][:index]] [options]
+
+Options:
+      [--skip-namespace], [--no-skip-namespace]  # Skip namespace (affects only isolated applications)
+      [--force-plural], [--no-force-plural]      # Forces the use of the given model name
+  -o, --orm=NAME                                 # ORM to be invoked
+                                                 # Default: active_record
+      [--model-name=MODEL_NAME]                  # ModelName to be used
+  -c, --resource-controller=NAME                 # Resource controller to be invoked
+                                                 # Default: controller
+  -a, [--actions=ACTION ACTION]                  # Actions for the resource controller
+      --resource-route                           # Indicates when to generate resource route
+                                                 # Default: true
+
+ActiveRecord options:
+      [--migration], [--no-migration]        # Indicates when to generate migration
+                                             # Default: true
+      [--timestamps], [--no-timestamps]      # Indicates when to generate timestamps
+                                             # Default: true
+      [--parent=PARENT]                      # The parent class for the generated model
+      [--indexes], [--no-indexes]            # Add indexes for references and belongs_to columns
+                                             # Default: true
+      [--primary-key-type=PRIMARY_KEY_TYPE]  # The type for primary key
+  -t, [--test-framework=NAME]                # Test framework to be invoked
+                                             # Default: test_unit
+
+TestUnit options:
+      [--fixture], [--no-fixture]   # Indicates when to generate fixture
+                                    # Default: true
+  -r, [--fixture-replacement=NAME]  # Fixture replacement to be invoked
+
+Controller options:
+      [--skip-routes], [--no-skip-routes]  # Don't add routes to config/routes.rb.
+      [--helper], [--no-helper]            # Indicates when to generate helper
+                                           # Default: true
+      [--assets], [--no-assets]            # Indicates when to generate assets
+                                           # Default: true
+  -e, [--template-engine=NAME]             # Template engine to be invoked
+                                           # Default: erb
+
+Asset options:
+  -j, [--javascripts], [--no-javascripts]       # Generate JavaScripts
+                                                # Default: true
+  -y, [--stylesheets], [--no-stylesheets]       # Generate Stylesheets
+                                                # Default: true
+  -je, [--javascript-engine=JAVASCRIPT_ENGINE]  # Engine for JavaScripts
+                                                # Default: coffee
+  -se, [--stylesheet-engine=STYLESHEET_ENGINE]  # Engine for Stylesheets
+                                                # Default: scss
+
+Runtime options:
+  -f, [--force]                    # Overwrite files that already exist
+  -p, [--pretend], [--no-pretend]  # Run but do not make any changes
+  -q, [--quiet], [--no-quiet]      # Suppress status output
+  -s, [--skip], [--no-skip]        # Skip files that already exist
+
+Description:
+    Stubs out a new resource including an empty model and controller suitable
+    for a RESTful, resource-oriented application. Pass the singular model name,
+    either CamelCased or under_scored, as the first argument, and an optional
+    list of attribute pairs.
+
+    Attribute pairs are field:type arguments specifying the
+    model's attributes. Timestamps are added by default, so you don't have to
+    specify them by hand as 'created_at:datetime updated_at:datetime'.
+
+    You don't have to think up every attribute up front, but it helps to
+    sketch out a few so you can start working with the model immediately.
+
+    This generator invokes your configured ORM and test framework, besides
+    creating helpers and add routes to config/routes.rb.
+
+    Unlike the scaffold generator, the resource generator does not create
+    views or add any methods to the generated controller.
+
+Examples:
+    `rails generate resource post` # no attributes
+    `rails generate resource post title:string body:text published:boolean`
+    `rails generate resource purchase order_id:integer amount:decimal`

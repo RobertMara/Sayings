@@ -1,0 +1,4 @@
+rails generate scaffold sayer name:string
+rails generate scaffold source description:string
+rails generate scaffold saying body:text sayer:references
+rails generate model SayerSource additional_source_info:string sayer:references source:references

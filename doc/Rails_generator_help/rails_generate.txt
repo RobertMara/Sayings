@@ -1,0 +1,43 @@
+Usage: rails generate GENERATOR [args] [options]
+
+General options:
+  -h, [--help]     # Print generator's options and usage
+  -p, [--pretend]  # Run but do not make any changes
+  -f, [--force]    # Overwrite files that already exist
+  -s, [--skip]     # Skip files that already exist
+  -q, [--quiet]    # Suppress status output
+
+Please choose a generator below.
+
+Rails:
+  application_record
+  assets
+  channel
+  controller
+  generator
+  helper
+  integration_test
+  jbuilder
+  job
+  mailer
+  migration
+  model
+  resource
+  scaffold
+  scaffold_controller
+  system_test
+  task
+
+ActiveRecord:
+  active_record:application_record
+
+Coffee:
+  coffee:assets
+
+Js:
+  js:assets
+
+TestUnit:
+  test_unit:generator
+  test_unit:plugin
+
