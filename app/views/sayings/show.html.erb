@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @saying.body %>
+</p>
+
+<p>
+  <strong>Sayer:</strong>
+  <%= @saying.sayer %>
+</p>
+
+<%= link_to 'Edit', edit_saying_path(@saying) %> |
+<%= link_to 'Back', sayings_path %>
