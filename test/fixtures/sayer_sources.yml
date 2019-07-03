@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  additional_source_info: MyString
+  sayer: one
+  source: one
+
+two:
+  additional_source_info: MyString
+  sayer: two
+  source: two
