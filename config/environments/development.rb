@@ -30,6 +30,10 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
 
+  # Use the lowest log level to ensure availability of diagnostic information
+  # when problems arise.
+  config.log_level = :debug
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
