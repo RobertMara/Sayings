@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'sayings#index'
   resources :sayings
   resources :sources
   resources :sayers
