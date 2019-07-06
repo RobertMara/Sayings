@@ -1,0 +1,31 @@
+                   Prefix Verb   URI Pattern                                                                              Controller#Action
+                     root GET    /                                                                                        sayings#index
+                  sayings GET    /sayings(.:format)                                                                       sayings#index
+                          POST   /sayings(.:format)                                                                       sayings#create
+               new_saying GET    /sayings/new(.:format)                                                                   sayings#new
+              edit_saying GET    /sayings/:id/edit(.:format)                                                              sayings#edit
+                   saying GET    /sayings/:id(.:format)                                                                   sayings#show
+                          PATCH  /sayings/:id(.:format)                                                                   sayings#update
+                          PUT    /sayings/:id(.:format)                                                                   sayings#update
+                          DELETE /sayings/:id(.:format)                                                                   sayings#destroy
+                  sources GET    /sources(.:format)                                                                       sources#index
+                          POST   /sources(.:format)                                                                       sources#create
+               new_source GET    /sources/new(.:format)                                                                   sources#new
+              edit_source GET    /sources/:id/edit(.:format)                                                              sources#edit
+                   source GET    /sources/:id(.:format)                                                                   sources#show
+                          PATCH  /sources/:id(.:format)                                                                   sources#update
+                          PUT    /sources/:id(.:format)                                                                   sources#update
+                          DELETE /sources/:id(.:format)                                                                   sources#destroy
+                   sayers GET    /sayers(.:format)                                                                        sayers#index
+                          POST   /sayers(.:format)                                                                        sayers#create
+                new_sayer GET    /sayers/new(.:format)                                                                    sayers#new
+               edit_sayer GET    /sayers/:id/edit(.:format)                                                               sayers#edit
+                    sayer GET    /sayers/:id(.:format)                                                                    sayers#show
+                          PATCH  /sayers/:id(.:format)                                                                    sayers#update
+                          PUT    /sayers/:id(.:format)                                                                    sayers#update
+                          DELETE /sayers/:id(.:format)                                                                    sayers#destroy
+       rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+       rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+     rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
