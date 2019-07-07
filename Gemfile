@@ -49,8 +49,15 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  # 7/7/2019: getting errors and cannot run tests:
+  #    not executable: "C:/Users/Rob_2/RubymineProjects/Sayings/.bundle/ruby/2.5.0/gems/chromedriver-helper-2.1.1/bin/chromedriver-helper" (Selenium::WebDriver::Error::WebDriverError)
+  # Comment out chromedriver-helper because it is deprecated in favor of webdrivers as of 2019-03-01.
+  #  See https://github.com/flavorjones/chromedriver-helper/issues/83.
+  #gem 'chromedriver-helper'
+  gem 'webdrivers'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
