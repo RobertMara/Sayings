@@ -28,6 +28,8 @@ like how to deploy the software, troubleshooting steps, steps to fix system prob
 * SQLite 3.x  
 * MiniTest
 
+The `.idea` directory contains JetBrains RubyMine IDE configuration settings.  Not required, but RubyMine is awesome! 
+
 I do not plan to deploy this to a server. Therefore:
 * I am using SQLite for simplicity. 
 * There is no authentication or authorization, no roles or permissions.  If you can run it, you rule your own little kingdom.
@@ -40,15 +42,17 @@ and as a comparison.  Or maybe use GraphQL.
 
 This assumes you have installed the software in the Technology section, above.
 
-Then install application using the standard commands:
+Then install application using the standard commands, below.
 
-#TODO: FIX and FINISH
+I am running on Windows 10, so I am prefixing my commands with `ruby`, as the generated script files 
+in the `bin` directory are Ruby files with the standard *nix shebang line that does nothing in Windows.
+
 ```
 Sayings> bundle install --path=./.bundle
-Sayings> bundle exec rake db:create
-Sayings> bundle exec rake db:migrate
-Sayings> bundle exec rake db:seed
-Sayings> TODO: whatever command runs minitest tests
+Sayings> ruby bin/rails db:create
+Sayings> ruby bin/rails db:migrate
+Sayings> ruby bin/rails rails db:seed
+Sayings> ruby bin/rails test
 
 ```
 
