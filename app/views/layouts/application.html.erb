@@ -9,6 +9,16 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <%# Skip to Main Content is for accessibility.  Allow people with screen readers, or just keyboard-only users,
+    # to skip down to the main part of the page.
+    # There is styling for the "skip" class that hides the anchor until it gets focus.
+    # In this app so far, there is nothing to skip, but if we add menus, a search box, or other links that appear on
+    # all pages, the user may want to skip all that rather than having to tab through it on each page.
+  -%>
+  <a class='skip' href="#mainContent">Skip to Main Content</a>
+
+
+  <div tabindex="-1" id="mainContent" role="main" />
   <body>
     <%= yield %>
   </body>

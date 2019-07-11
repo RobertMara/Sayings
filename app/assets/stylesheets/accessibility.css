@@ -1,0 +1,13 @@
+/* Skip class styling to hide "Skip to Main Content" link until it receives focus. */
+a.skip {
+    position: absolute;
+    top:-42px;
+    left:0px;
+    background:transparent;
+    transition: top 0.7s 0.5s ease-out, background 0.7s linear;
+}
+a.skip:focus {
+    top:0px;
+    background:#ffffff;
+    transition: top 0.1s ease-in, background 0.25s linear;
+}
