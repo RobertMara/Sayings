@@ -15,7 +15,7 @@
     <% @sayings.each do |saying| %>
       <tr>
         <td><%= saying.body %></td>
-        <td><%= saying.sayer %></td>
+        <td><%= saying.sayer.name %></td>
         <td><%= link_to 'Show', saying %></td>
         <td><%= link_to 'Edit', edit_saying_path(saying) %></td>
         <td><%= link_to 'Destroy', saying, method: :delete, data: { confirm: 'Are you sure?' } %></td>
