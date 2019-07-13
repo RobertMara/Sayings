@@ -1,5 +1,8 @@
 class SayingsController < ApplicationController
   before_action :set_saying, only: [:show, :edit, :update, :destroy]
+  before_action :set_sayer, only: [:show, :edit]
+  # Need :create on set_all_sayers in case there is an error.
+  before_action :set_all_sayers, only: [:new, :create, :edit]
 
   # GET /sayings
   # GET /sayings.json
@@ -65,6 +68,17 @@ class SayingsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_saying
       @saying = Saying.find(params[:id])
+    end
+
+    # Sayer already associated with Saying.
+    def set_sayer
+      #@sayer = Sayer.find(params[:sayer_id]) #Fails on show after creating a new Saying.
+      @sayer = @saying.sayer
+    end
+
+    # All Sayers; for selection by user.
+    def set_all_sayers
+      @all_sayers = Sayer.all
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

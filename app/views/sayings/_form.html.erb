@@ -1,3 +1,6 @@
+<%# This form is only used when creating a new Saying or
+  # editing an existing Saying.
+-%>
 <%= form_with(model: saying, local: true) do |form| %>
   <% if saying.errors.any? %>
     <div id="error_explanation">
@@ -18,7 +21,8 @@
 
   <div class="field">
     <%= form.label :sayer_id %>
-    <%= form.text_field :sayer_id %>
+    <% all_sayer_options = options_from_collection_for_select(all_sayers, :id, :name, saying.sayer_id) %>
+    <%= select(:saying, :sayer_id, all_sayer_options, {include_blank: true}) %>
   </div>
 
   <div class="actions">

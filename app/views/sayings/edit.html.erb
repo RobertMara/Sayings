@@ -1,6 +1,6 @@
 <h1>Editing Saying</h1>
 
-<%= render 'form', saying: @saying %>
+<%= render 'form', {saying: @saying, all_sayers: @all_sayers} %>
 
 <%= link_to 'Show', @saying %> |
 <%= link_to 'Back', sayings_path %>
