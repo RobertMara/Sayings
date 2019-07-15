@@ -515,6 +515,21 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="jquery-ui-rails (vbundled(6.0.1)) [path][gem]" type="rubylib">
+        <properties>
+          <option name="version" value="4" />
+        </properties>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/.bundle/ruby/2.5.0/gems/jquery-ui-rails-6.0.1/app" />
+          <root url="file://$MODULE_DIR$/.bundle/ruby/2.5.0/gems/jquery-ui-rails-6.0.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/.bundle/ruby/2.5.0/gems/jquery-ui-rails-6.0.1/app" />
+          <root url="file://$MODULE_DIR$/.bundle/ruby/2.5.0/gems/jquery-ui-rails-6.0.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="loofah (vbundled(2.2.3)) [path][gem]" type="rubylib">
         <properties>
           <option name="version" value="4" />
