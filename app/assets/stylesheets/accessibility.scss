@@ -1,3 +1,7 @@
+/* Was originally "accessibility.css", was renamed to .scss because otherwise
+ * it would not have access to the Bootstrap mixins and variables.
+ * I don't know a thing about Sass; not sure this will still work!
+ */
 /* Skip class styling to hide "Skip to Main Content" link until it receives focus. */
 a.skip {
     position: absolute;
