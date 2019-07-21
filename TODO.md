@@ -3,10 +3,9 @@ Other pages:  [README](README.md) | [Design](DESIGN.md) | [Versions](VERSIONS.md
 # TODO List
 
 * Create a new root page.
-  * Add jQuery tab widget because that's what I'm trying to do at work.
+  * Add Bootstrap.
+  * Add Bootstrap navbar widget.
   * Add tabs in order: Sayings, Sayers, Sources.  Sayings would get default focus.
-  * Make sure it is accessible via the keyboard only!
-  * It does not appear Rails 5 uses jQuery 
 * Work on sources#new
 * Work on sources#create
 * Work on sources#show
