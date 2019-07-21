@@ -22,9 +22,7 @@
 
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-@import "application";
-@import "accessibility";
-@import "sayers";
-@import "sayings";
-@import "scaffolds";
-@import "sources";
+
+// The Sass equivalent of "require_tree .", per the Ruby on Rails
+// guide "The Asset Pipeline" https://guides.rubyonrails.org/asset_pipeline.html.
+@import "**/*";
