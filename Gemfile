@@ -39,6 +39,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Bootstrap website:  https://getbootstrap.com
 gem 'bootstrap', '~> 4.3.1'
 
+# Bootstrap requires jQuery.  Added jquery-rails per instructions in
+# https://github.com/twbs/bootstrap-rubygem#a-ruby-on-rails.
+gem 'jquery-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
