@@ -26,12 +26,6 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# "[The jquery-rails gem] packages the jQuery UI assets (JavaScripts, stylesheets, and images)
-# for the Rails asset pipeline, so you never have to download a custom package through the web interface again."
-# See https://github.com/jquery-ui-rails/jquery-ui-rails.
-# Configuration settings were added to application.js and application.css.
-gem 'jquery-ui-rails'
-
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
