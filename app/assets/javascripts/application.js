@@ -12,7 +12,6 @@
 //
 //= require rails-ujs
 //= require jquery-ui/widgets/menu
-//= require jquery-ui/widgets/tabs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
