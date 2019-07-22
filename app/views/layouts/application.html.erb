@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <body>
 
   <%# Skip to Main Content is for accessibility.  Allow people with screen readers, or just keyboard-only users,
     # to skip down to the main part of the page.
@@ -17,9 +18,14 @@
   -%>
   <a class='skip' href="#mainContent">Skip to Main Content</a>
 
+  <%# ? maybe put menus here ? %>
 
   <div tabindex="-1" id="mainContent" role="main" />
-  <body>
-    <%= yield %>
+
+  <%= render partial: 'layouts/tabbed_sections' %>
+
+
+
+  <%= yield %>
   </body>
 </html>
