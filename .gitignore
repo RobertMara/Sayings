@@ -31,6 +31,4 @@
 /config/master.key
 
 # Ignore these RubyMine files, per JetBrains.com
-.idea/workspace.xml
-.idea/usage.statistics.xml
-.idea/tasks.xml
+.idea/*
