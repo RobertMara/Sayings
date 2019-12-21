@@ -31,4 +31,4 @@
 /config/master.key
 
 # Ignore these RubyMine files, per JetBrains.com
-.idea/*
+/.idea/*
